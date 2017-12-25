@@ -59,20 +59,20 @@
     </b:template-skin>
 
 		<style>
-          	body::-webkit-scrollbar{
+      body::-webkit-scrollbar{
 				width : 8px;
 			}
-          	body::-webkit-scrollbar-thumb {
+      body::-webkit-scrollbar-thumb {
 				background : #333;
 			}		
-        	.wrap-site{}
+      .wrap-site{}
 			.main,
 			.main__container,
-          	.header {
+      .header {
 				position : relative;
 			}
 			/*menu*/
-        	.menu{
+      .menu{
 				display : flex;
 				width : 100%;
 				height : 80px;
@@ -85,7 +85,7 @@
 			.menu:hover{
 				box-shadow : 0 0 30px rgba(8,8,8,.3);
 			}
-        	.menu__container{
+      .menu__container{
 				margin : auto;
 				width : 80%;
 				height : 80%;
@@ -93,12 +93,19 @@
 				align-items : center;
 				justify-content : space-between;
 			}
-        	.header{
+			.menu__icon {
+				width : 40px;
+				height : 30;
+				background : #eee;
+				box-shadow : 0 5px 0 #eee, 0 -5px 0 #eee;
+			}
+			
+      .header{
 				width : 100%;
 				height : 400px;
 				background : #333;
 			}
-          	.header:before{
+      .header:before{
 				content : "";
 				position : absolute;
 				width : 100%;
@@ -106,13 +113,13 @@
 				background : rgba(3,3,3, .5);
 				z-index : 200;
 			}
-        	.header__img{
+      .header__img{
 				position : absolute;
 				width : 100%;
 				height : 100%;
 				object-fit : cover;
 			}
-          	.main{
+      .main{
 				width : 80%;
 				height : 1000px;
 				background : #eee;
@@ -122,7 +129,7 @@
 				z-index : 400;
 			}
 			.main:after,
-          	.main:before{
+      .main:before{
 				content : "";
 				position : absolute;
 				width : 20px;
@@ -132,15 +139,15 @@
 				filter : blur(25px);
 				z-index : -1;
 			}
-          	.main:before {
+      .main:before {
 				left : 0;
 				transform : rotate(-8deg);
 			}
-          	.main:after{
+      .main:after{
 				right : 0;
 				transform : rotate(8deg);
 			}
-          	.main__container{
+      .main__container{
 				width : 100%;
 				height : 100%;
 				background : #eee;
@@ -154,9 +161,9 @@
 			
 			<section class='menu'>
 				<div class='menu__container'>
-                	<h2>CodeY4k</h2>
-                	<h2>Icon</h2>
-            	</div>
+          <h2>CodeY4k</h2>
+          <h2>Icon</h2>
+        </div>
 			</section>
 			<b:switch var='data:blog.pageType'>
 				<b:case value='static_page'/>
@@ -168,10 +175,10 @@
 						<img alt='img codey4k' class='header__img' src='https://docs.google.com/uc?id=1qv5AMaR3UNZqQnhX9IsU2NtusDnB6bDS'/>          		
 					</header>
 					<main class="main">
-                    	<div class="main__container">
+            <div class="main__container">
 						</div>
-              		</main>
-          		</b:switch>
+          </main>
+        </b:switch>
 				<b:section id='main'/>
 			<!--
     		
@@ -181,18 +188,18 @@
     	<script>
         	document.addEventListener('DOMContentLoaded',function(){
             	window.addEventListener('scroll',function(){
-					let scroll = document.documentElement.scrollTop || document.body.scrollTop,
-						menu = document.querySelector('.menu')
-                    if(scroll >= 100){
-                    	menu.style.height = 60
-						menu.style.background = 'orange'; 
-					}
-                 	else{
-						menu.style.height = 80
-                        menu.style.background = 'transparent';
-					}
+							let scroll = document.documentElement.scrollTop || document.body.scrollTop,
+							menu = document.querySelector('.menu')
+          		if(scroll >= 100){
+            		menu.style.height = 60
+								menu.style.background = 'orange'; 
+							}
+          		else{
+								menu.style.height = 80
+            		.style.background = 'transparent';
+							}
+						})
 				})
-			})
 		</script>
 	</body>
 </html>

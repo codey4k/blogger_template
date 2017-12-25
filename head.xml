@@ -11,6 +11,24 @@
 	  xmlns:b='http://www.google.com/2005/gml/b' 
 	  xmlns:data='http://www.google.com/2005/gml/data' 
 	  xmlns:expr='http://www.google.com/2005/gml/expr'>
+	
+		<b:skin>
+    		<![CDATA[
+    			* {
+    				margin : 0;
+    				padding : 0;
+    				box-sizing : border-box;
+    			}
+    			
+    			div,
+    			main,
+    			article,
+    			section {
+    				display : block;
+    			}
+    			
+    		]]>
+		</b:skin>
 	<head>
 
 	</head>
