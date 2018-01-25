@@ -110,7 +110,7 @@
 				position : absolute;
 				width : 100%;
 				height : 100%;
-				background : rgba(3,3,3, .5);
+				background : rgba(3,3,3, .6);
 				z-index : 200;
 			}
       .header__img{
@@ -187,16 +187,20 @@
 		</div>
     	<script>
         	document.addEventListener('DOMContentLoaded',function(){
-            	window.addEventListener('scroll',function(){
+            window.addEventListener('scroll',function(){
 							let scroll = document.documentElement.scrollTop || document.body.scrollTop,
 							menu = document.querySelector('.menu')
           		if(scroll >= 100){
-            		menu.style.height = 60
-								menu.style.background = 'orange'; 
+								Object.assign(menu.style,{
+									height: '60px',
+									background : 'orange'
+								})
 							}
           		else{
-								menu.style.height = 80
-            		.style.background = 'transparent';
+            		Object.assign(menu.style,{
+            			height : '80px',
+            			background : 'transparent'
+            		})
 							}
 						})
 				})
