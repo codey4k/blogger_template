@@ -61,7 +61,7 @@
 		<style>
 			:root {
 				--primaryColor : orange;
-				--secondaryColor : #444;
+				--secondaryColor : #333;
 			}
 			
       body::-webkit-scrollbar{
@@ -157,6 +157,12 @@
 				height : 100%;
 				background : #eee;
 			}
+			.footer{
+				width : 100%;
+				height : 200px;
+				background : var(--secondaryColor);
+			}
+			.footer__container{}
 		</style>
 
 	</head>
@@ -189,6 +195,9 @@
     		
         	
 			-->
+			<footer class="footer">
+				<div class="footer__container"></div>
+			</footer>
 		</div>
     	<script>
         	document.addEventListener('DOMContentLoaded',function(){
