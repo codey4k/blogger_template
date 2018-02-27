@@ -5,6 +5,7 @@
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
     <title><data:view.title.escaped/></title>
     <link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet'/>
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel='stylesheet'/>
     <b:include data='blog' name='all-head-content'/>
     <b:skin version='1.2.0'><![CDATA[
 		
@@ -99,10 +100,7 @@
 				justify-content : space-between;
 			}
 			.menu__icon {
-				width : 40px;
-				height : 30;
-				background : #eee;
-				box-shadow : 0 5px 0 #eee, 0 -5px 0 #eee;
+				font-size : 1.8em;
 			}
 			
       .header{
@@ -173,7 +171,7 @@
 			<section class='menu'>
 				<div class='menu__container'>
           <h2>CodeY4k</h2>
-          <h2>Icon</h2>
+          <i class="menu__icon ion-grid"/>
         </div>
 			</section>
 			<b:switch var='data:blog.pageType'>
