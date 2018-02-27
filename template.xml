@@ -12,8 +12,10 @@
 			*{
 				margin : 0;
 				padding : 0;
+				border : none;
+				outline : none;
 				transition : all .7s;
-				box-sizing : border-box;
+				box-sizing : border-box !important;
 			}
 			body {
 				color : #555;
@@ -21,16 +23,35 @@
 				min-height : 100vh;
 				font-family : 'Quicksand', Helvetica;
 			}
+			
+			h1,h2,h3,h4,h5,h6 {
+				clear : bolth !important;
+			}
+			
+			li,ol,ul {
+				list-style : none !important;
+			}
+			
+			a {
+				text-decoration : none !important;
+			}
 
 			div,
+			nav,
 			img,
 			main,
 			aside,
+			header,
+			footer,
 			article,
 			section {
 				display : block;
 			}
-		
+			
+			*::selection {
+				color : #eee;
+				background : #666;
+			}
 	]]></b:skin>
     <b:template-skin>
       <![CDATA[
