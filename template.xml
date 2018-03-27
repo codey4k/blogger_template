@@ -226,7 +226,7 @@
           		if(scroll >= 100){
 								Object.assign(menu.style,{
 									height: '60px',
-									background : 'orange'
+									background : '#333'
 								})
 							}
           		else{
