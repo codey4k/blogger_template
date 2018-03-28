@@ -33,6 +33,7 @@
 			}
 			
 			a {
+				color : transparent;
 				text-decoration : none !important;
 			}
 
@@ -82,6 +83,7 @@
 
 		<style>
 			:root {
+				--white : #eee;
 				--primaryColor : orange;
 				--secondaryColor : #333;
 			}
@@ -145,7 +147,7 @@
 			}
       .main{
 				width : 80%;
-				height : 1000px;
+				height : auto;
 				background : #eee;
 				border-radius : 3px;
 				margin : auto;
@@ -173,15 +175,33 @@
 			}
       .main__container{
 				width : 100%;
-				height : 100%;
-				background : #eee;
+				height : 1000px;
+				background : var(--white);
 			}
 			.footer{
 				width : 100%;
-				height : 200px;
+				height : 150px;
+				display : flex;
 				background : var(--secondaryColor);
 			}
-			.footer__container{}
+			.footer__container{
+				margin : auto;
+				width : 80%;
+				height : 60%;
+				display : inline-flex;
+				align-items : center;
+				justify-content : space-between;
+			}
+			.footer__copyright {
+				color : #888;
+			}
+			.footer__social {
+				display : inline-block;
+			}
+			.footer__social a {
+				margin : .8em;
+				color : #888;
+			}
 		</style>
 
 	</head>
@@ -215,7 +235,14 @@
         	
 			-->
 			<footer class="footer">
-				<div class="footer__container"></div>
+				<div class="footer__container">
+					<p class="footer__copyright">Copyright &#169; CodeY4k</p>
+					<ul class="footer__social">
+						<a href="https://www.facebook.com/CodeY4k" class="ion-social-facebook" target="_blank"></a>
+						<a href="https://twitter.com/codey4k" class="ion-social-twitter" target="_blank"></a>
+						<a href="https://github.com/codey4k" class="ion-social-github" target="_blank"></a>
+					</ul>
+				</div>
 			</footer>
 		</div>
     	<script>
