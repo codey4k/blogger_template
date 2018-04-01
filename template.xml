@@ -82,6 +82,7 @@
     </b:template-skin>
 
 		<style>
+			/* <![CDATA[ */
 			:root {
 				--white : #eee;
 				--primaryColor : orange;
@@ -202,6 +203,7 @@
 				margin : .8em;
 				color : #888;
 			}
+			/* ]]> */
 		</style>
 
 	</head>
@@ -246,6 +248,7 @@
 			</footer>
 		</div>
     	<script>
+    		// <![CDATA[
         	document.addEventListener('DOMContentLoaded',function(){
             window.addEventListener('scroll',function(){
 							let scroll = document.documentElement.scrollTop || document.body.scrollTop,
@@ -264,6 +267,7 @@
 							}
 						})
 				})
+			// ]]>
 		</script>
 	</body>
 </html>
