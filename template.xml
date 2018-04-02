@@ -131,6 +131,7 @@
 				width : 100%;
 				height : 400px;
 				background : #333;
+				display : flex;
 			}
       .header:before{
 				content : "";
@@ -145,6 +146,14 @@
 				width : 100%;
 				height : 100%;
 				object-fit : cover;
+			}
+			.header__title {
+				margin : auto;
+				z-index : 300;
+			}
+			.post-title {
+				color : #fff;
+				text-align : center;
 			}
       .main{
 				width : 80%;
@@ -221,7 +230,17 @@
 				<b:case value='static_page'/>
   					<h1>Page</h1>
 				<b:case value='item'/>
-  					<h1>Post</h1>
+  					<header class='header'>
+  						<img alt='post img' class='header__img' />
+  						<h2 class="header__title post-title"><data:post.title/></h2>
+  					</header>
+  					<div class="main">
+  						<div class="main__container">
+  							<div class="post-body">
+  								<data:post.body/>
+  							</div>
+  						</div>
+  					</div>
 				<b:default/>
 					<header class='header'>
 						<img alt='img codey4k' class='header__img' src='https://docs.google.com/uc?id=1qv5AMaR3UNZqQnhX9IsU2NtusDnB6bDS'/>          		
