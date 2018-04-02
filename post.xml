@@ -1,0 +1,8 @@
+<b:section id="main">
+    <b:widget id="Blog1" type="Blog">
+        <b:includable id="main">
+            <b:loop values="data:posts" var="post">
+            </b:loop>
+        </b:includable>
+    </b:widget>        
+</b:section>
