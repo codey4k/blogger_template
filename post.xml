@@ -1,3 +1,4 @@
+<!--estructura de post-->
 <b:section id="main">
     <b:widget id="Blog1" type="Blog">
         <b:includable id="main">
